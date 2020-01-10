@@ -14,6 +14,7 @@ development.
 
    installation
    usage
+   theory
    contribute
    documents
 
