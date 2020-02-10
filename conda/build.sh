@@ -8,6 +8,14 @@ else
   CMAKE_BUILD_TYPE=Release
 fi
 
+echo
+echo "SRC_DIR:              ${SRC_DIR}"
+echo "RECIPE_DIR:           ${RECIPE_DIR}"
+echo "CPU_COUNT:            ${CPU_COUNT}"
+echo "CMAKE_GENERATOR:      ${CMAKE_GENERATOR}"
+echo "CMAKE_PLATFORM_FLAGS: ${CMAKE_PLATFORM_FLAGS}"
+echo
+
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=${PREFIX} \
