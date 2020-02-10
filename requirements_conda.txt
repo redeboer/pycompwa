@@ -1,0 +1,14 @@
+ROOT
+boost
+cmake
+ipykernel
+ipython
+matplotlib
+numpy
+pandas
+progress
+pytest
+scikit-build
+scipy
+uproot
+xmltodict

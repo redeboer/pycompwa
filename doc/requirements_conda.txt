@@ -1,0 +1,9 @@
+Sphinx
+ipython
+matplotlib
+nbconvert
+numpy
+progress
+sphinx_rtd_theme
+uproot
+xmltodict
