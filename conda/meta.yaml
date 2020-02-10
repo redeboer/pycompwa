@@ -1,0 +1,27 @@
+package:
+  name: pycompwa
+  version: "0.2.0"
+
+source:
+  # git_url: https://github.com/ComPWA/pycompwa
+  path: ..
+
+requirements:
+  build:
+    - ROOT
+    - boost
+    - cmake
+  run:
+    - python
+
+about:
+  home: https://pycompwa.readthedocs.io/en/latest/
+  license: GNU General Public License
+  license_family: GPL3
+  summary: The common Partial Wave Analysis framework
+
+extra:
+  recipe-maintainers:
+    - redeboer
+    - spflueger
+    - weidenka
