@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>helicitydecay &mdash; pycompwa  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="solvers" href="pycompwa.expertsystem.solvers.html" />
+    <link rel="prev" title="canonicaldecay" href="pycompwa.expertsystem.amplitude.canonicaldecay.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">How to contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documents.html">Talks and Documents</a></li>
+</ul>
+
+            
+          
+    <a href= "../py-modindex.html">Module Index (API)</a>
+    <a href= "../genindex.html">General Index</a>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pycompwa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../api.html">API</a> &raquo;</li>
+        
+          <li><a href="pycompwa.html">pycompwa</a> &raquo;</li>
+        
+          <li><a href="pycompwa.expertsystem.html">expertsystem</a> &raquo;</li>
+        
+          <li><a href="pycompwa.expertsystem.amplitude.html">amplitude</a> &raquo;</li>
+        
+      <li>helicitydecay</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ComPWA/pycompwa/blob/master/doc/source/api/pycompwa.expertsystem.amplitude.helicitydecay.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="pycompwa.expertsystem.solvers.html" class="btn btn-neutral float-right" title="solvers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pycompwa.expertsystem.amplitude.canonicaldecay.html" class="btn btn-neutral float-left" title="canonicaldecay" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-pycompwa.expertsystem.amplitude.helicitydecay">
+<span id="helicitydecay"></span><h1>helicitydecay<a class="headerlink" href="#module-pycompwa.expertsystem.amplitude.helicitydecay" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML">
+<em class="property">class </em><code class="sig-name descname">HelicityAmplitudeGeneratorXML</code><span class="sig-paren">(</span><em class="sig-param">top_node_no_dynamics=True</em>, <em class="sig-param">name_generator=&lt;pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator object&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pycompwa.expertsystem.amplitude.abstractgenerator.html#pycompwa.expertsystem.amplitude.abstractgenerator.AbstractAmplitudeGenerator" title="pycompwa.expertsystem.amplitude.abstractgenerator.AbstractAmplitudeGenerator"><code class="xref py py-class docutils literal notranslate"><span class="pre">pycompwa.expertsystem.amplitude.abstractgenerator.AbstractAmplitudeGenerator</span></code></a></p>
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">top_node_no_dynamics=True</em>, <em class="sig-param">name_generator=&lt;pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator object&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.fix_parameters_unambiguously">
+<code class="sig-name descname">fix_parameters_unambiguously</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.fix_parameters_unambiguously"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.fix_parameters_unambiguously" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fix parameters, so that the total amplitude is unambiguous, with regard
+to the fit parameters. In other words: all fit parameters per graph,
+except one, will all be fixed. It’s fine if they are all already fixed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate">
+<code class="sig-name descname">generate</code><span class="sig-paren">(</span><em class="sig-param">graphs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.generate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate_amplitude_info">
+<code class="sig-name descname">generate_amplitude_info</code><span class="sig-paren">(</span><em class="sig-param">graph_groups</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.generate_amplitude_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate_amplitude_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate_partial_decay">
+<code class="sig-name descname">generate_partial_decay</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">node_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.generate_partial_decay"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate_partial_decay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate_sequential_decay">
+<code class="sig-name descname">generate_sequential_decay</code><span class="sig-paren">(</span><em class="sig-param">graph</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.generate_sequential_decay"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.generate_sequential_decay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.get_fit_parameters">
+<code class="sig-name descname">get_fit_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.get_fit_parameters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.get_fit_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.write_to_file">
+<code class="sig-name descname">write_to_file</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeGeneratorXML.write_to_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeGeneratorXML.write_to_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator">
+<em class="property">class </em><code class="sig-name descname">HelicityAmplitudeNameGenerator</code><span class="sig-paren">(</span><em class="sig-param">use_parity_conservation=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeNameGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pycompwa.expertsystem.amplitude.abstractgenerator.html#pycompwa.expertsystem.amplitude.abstractgenerator.AbstractAmplitudeNameGenerator" title="pycompwa.expertsystem.amplitude.abstractgenerator.AbstractAmplitudeNameGenerator"><code class="xref py py-class docutils literal notranslate"><span class="pre">pycompwa.expertsystem.amplitude.abstractgenerator.AbstractAmplitudeNameGenerator</span></code></a></p>
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">use_parity_conservation=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeNameGenerator.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator.generate_amplitude_coefficient_infos">
+<code class="sig-name descname">generate_amplitude_coefficient_infos</code><span class="sig-paren">(</span><em class="sig-param">graph</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeNameGenerator.generate_amplitude_coefficient_infos"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator.generate_amplitude_coefficient_infos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates coefficient info for a sequential amplitude graph.</p>
+<p>Generally, each partial amplitude of a sequential amplitude graph
+should check itself if it or a parity partner is already defined. If so
+a coupled coefficient is introduced.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator.generate_unique_amplitude_name">
+<code class="sig-name descname">generate_unique_amplitude_name</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">node_id=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#HelicityAmplitudeNameGenerator.generate_unique_amplitude_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.HelicityAmplitudeNameGenerator.generate_unique_amplitude_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a unique name for the amplitude corresponding to the given
+<a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>node_id</strong> – Use this argument to generate a unique name for the
+partial amplitude corresponding to the interaction node of the
+given <a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.determine_attached_final_state">
+<code class="sig-name descname">determine_attached_final_state</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">edge_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#determine_attached_final_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.determine_attached_final_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines all final state particles of a graph, which are attached
+downward (forward in time) for a given edge (resembling the root)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> (<a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>) – </p></li>
+<li><p><strong>edge_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – id of the edge, which is taken as the root</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of final state edge ids ([int])</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.determine_attached_final_state_string">
+<code class="sig-name descname">determine_attached_final_state_string</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">edge_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#determine_attached_final_state_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.determine_attached_final_state_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.generate_kinematics">
+<code class="sig-name descname">generate_kinematics</code><span class="sig-paren">(</span><em class="sig-param">graphs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#generate_kinematics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.generate_kinematics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.generate_particle_list">
+<code class="sig-name descname">generate_particle_list</code><span class="sig-paren">(</span><em class="sig-param">graphs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#generate_particle_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.generate_particle_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.generate_particles_string">
+<code class="sig-name descname">generate_particles_string</code><span class="sig-paren">(</span><em class="sig-param">name_hel_list</em>, <em class="sig-param">use_helicity=True</em>, <em class="sig-param">make_parity_partner=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#generate_particles_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.generate_particles_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.get_graph_group_unique_label">
+<code class="sig-name descname">get_graph_group_unique_label</code><span class="sig-paren">(</span><em class="sig-param">graph_group</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#get_graph_group_unique_label"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.get_graph_group_unique_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.get_helicity_from_edge_props">
+<code class="sig-name descname">get_helicity_from_edge_props</code><span class="sig-paren">(</span><em class="sig-param">edge_props</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#get_helicity_from_edge_props"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.get_helicity_from_edge_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.get_parent_recoil_edge">
+<code class="sig-name descname">get_parent_recoil_edge</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">edge_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#get_parent_recoil_edge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.get_parent_recoil_edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the id of the recoil edge of the parent edge for the specified
+edge of a graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> (<a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>) – </p></li>
+<li><p><strong>edge_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – id of the edge, for which the parents recoil partner is
+determined</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>parent recoil edge id (int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.get_prefactor">
+<code class="sig-name descname">get_prefactor</code><span class="sig-paren">(</span><em class="sig-param">graph</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#get_prefactor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.get_prefactor" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates the product of all prefactors defined in this graph as a double</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.get_recoil_edge">
+<code class="sig-name descname">get_recoil_edge</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">edge_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#get_recoil_edge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.get_recoil_edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the id of the recoil edge for the specified edge of a graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> (<a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>) – </p></li>
+<li><p><strong>edge_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – id of the edge, for which the recoil partner is
+determined</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>recoil edge id (int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.group_graphs_same_initial_and_final">
+<code class="sig-name descname">group_graphs_same_initial_and_final</code><span class="sig-paren">(</span><em class="sig-param">graphs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#group_graphs_same_initial_and_final"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.group_graphs_same_initial_and_final" title="Permalink to this definition">¶</a></dt>
+<dd><p>Each graph corresponds to a specific state transition amplitude.
+This function groups together graphs, which have the same initial and
+final state (including spin). This is needed to determine the coherency of
+the individual amplitude parts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graphs</strong> ([<a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>]) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>graph groups ([[<a class="reference internal" href="pycompwa.expertsystem.topology.graph.html#pycompwa.expertsystem.topology.graph.StateTransitionGraph" title="pycompwa.expertsystem.topology.graph.StateTransitionGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTransitionGraph</span></code></a>]])</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycompwa.expertsystem.amplitude.helicitydecay.remove_spin_projection">
+<code class="sig-name descname">remove_spin_projection</code><span class="sig-paren">(</span><em class="sig-param">edge_props</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycompwa/expertsystem/amplitude/helicitydecay.html#remove_spin_projection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycompwa.expertsystem.amplitude.helicitydecay.remove_spin_projection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pycompwa.expertsystem.solvers.html" class="btn btn-neutral float-right" title="solvers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pycompwa.expertsystem.amplitude.canonicaldecay.html" class="btn btn-neutral float-left" title="canonicaldecay" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

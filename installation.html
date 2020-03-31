@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; pycompwa  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Get the source code" href="install/get-the-source-code.html" />
+    <link rel="prev" title="Welcome to the pycompwa website!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-through-pip">Installation through pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-installation">Interactive installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install/get-the-source-code.html">Get the source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install/virtual-environment.html">Create a virtual environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install/build.html">Build and install</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">How to contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documents.html">Talks and Documents</a></li>
+</ul>
+
+            
+          
+    <a href= "py-modindex.html">Module Index (API)</a>
+    <a href= "genindex.html">General Index</a>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pycompwa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ComPWA/pycompwa/blob/master/doc/source/installation.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="install/get-the-source-code.html" class="btn btn-neutral float-right" title="Get the source code" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to the pycompwa website!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="api/pycompwa.html#module-pycompwa" title="pycompwa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pycompwa</span></code></a> is <a class="reference external" href="https://pypi.org/">available as a PyPI package</a>. However,
+since the <a class="reference internal" href="api/pycompwa.ui.html#module-pycompwa.ui" title="pycompwa.ui"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pycompwa.ui</span></code></a> module contains Python bindings to the <a class="reference external" href="https://github.com/ComPWA/ComPWA">ComPWA backend</a>, you first need to install certain C++
+prerequisites.</p>
+<p>What you definitely need to install, is:</p>
+<ul class="simple">
+<li><p>a build tool: <a class="reference external" href="https://cmake.org/">cmake</a></p></li>
+<li><p>a C++ compiler:
+<a class="reference external" href="https://gcc.gnu.org/">gcc</a> or <a class="reference external" href="https://clang.llvm.org/">clang</a></p></li>
+<li><p><a class="reference external" href="https://www.boost.org/">Boost</a></p></li>
+<li><p><a class="reference external" href="https://www.python.org/downloads/">Python3</a></p></li>
+</ul>
+<p>The following package are optional:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://root.cern.ch/downloading-root">ROOT</a> and/or <a class="reference external" href="http://seal.web.cern.ch/seal/snapshot/work-packages/mathlibs/minuit/">Minuit2</a></p></li>
+<li><p><a class="reference external" href="https://www.gnu.org/software/gsl/">GSL</a></p></li>
+<li><p><a class="reference external" href="https://www.gemfony.eu/">Geneva</a></p></li>
+</ul>
+<p>It is highly recommended to install ROOT <a class="reference external" href="https://root.cern.ch/building-root">with Minuit2 enabled</a>. Without it, ComPWA will have only
+limited functionality.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you have a Linux machine with <a class="reference external" href="https://wiki.debian.org/Apt">apt</a> and
+with administrator rights, you can run the following:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo apt update -y
+sudo apt install -y cmake gcc git libboost-all-dev python3
+</pre></div>
+</div>
+<p>ROOT with Minuit2 can be most easily installed by <a class="reference external" href="https://root.cern.ch/downloading-root">downloading a suitable
+binary for your machine</a>.</p>
+</div>
+</div>
+<div class="section" id="installation-through-pip">
+<h2>Installation through pip<a class="headerlink" href="#installation-through-pip" title="Permalink to this headline">¶</a></h2>
+<p>Once you have these dependencies installed, you can install <a class="reference internal" href="api/pycompwa.html#module-pycompwa" title="pycompwa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pycompwa</span></code></a> through
+<a class="reference external" href="https://pypi.org/project/pip/">pip</a>. You also need to install <a class="reference external" href="https://scikit-build.readthedocs.io/en/latest/">scikit-build</a>, because it is used as a
+build tool for the ComPWA backend:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install scikit-build
+pip install pycompwa
+</pre></div>
+</div>
+<p>Et voilà, that’s it! You can try out whether the installation works by running:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pycompwa</span>
+</pre></div>
+</div>
+<p>from the Python interpreter. If that works, you can try out some of the
+examples from the <a class="reference internal" href="usage.html"><span class="doc">Usage</span></a> page.</p>
+<p>Note that <strong class="command">pip</strong> <strong>only allows you to install specific releases</strong>. We
+therefore recommend following the <a class="reference internal" href="#interactive-installation"><span class="std std-ref">interactive installation</span></a> procedure instead.</p>
+</div>
+<div class="section" id="interactive-installation">
+<h2>Interactive installation<a class="headerlink" href="#interactive-installation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="api/pycompwa.html#module-pycompwa" title="pycompwa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pycompwa</span></code></a> is an academic research project and is bound to continuously evolve.
+We therefore highly recommend installing <a class="reference internal" href="api/pycompwa.html#module-pycompwa" title="pycompwa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pycompwa</span></code></a> from <a class="reference external" href="https://github.com/ComPWA/pycompwa">the source code</a>, so that you work with the latest
+version.</p>
+<p>Moreover, since you read as far as this, you must have an interest in
+partial-wave analysis, and it is researchers like you who can help bring this
+project further! So please, have a look through the following sections to set
+up this ‘interactive installation’:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install/get-the-source-code.html">Get the source code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/virtual-environment.html">Create a virtual environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/virtual-environment.html#conda-environment">Conda environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/virtual-environment.html#python-venv">Python venv</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install/build.html">Build and install</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/build.html#using-setuptools">Using <code class="docutils literal notranslate"><span class="pre">setuptools</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/build.html#developer-mode">Developer Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/build.html#test-the-installation">Test the installation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>After that, it’s worth having a look at the <a class="reference internal" href="contribute.html"><span class="doc">contribute tutorials</span></a>!</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install/get-the-source-code.html" class="btn btn-neutral float-right" title="Get the source code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to the pycompwa website!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
