@@ -1,16 +1,20 @@
 Theory
 ======
 
+.. warning::
+
+   **Work-In-Progress!**
+
 Overview
 --------
 
 In general one is interested in gaining knowledge about the interaction of
-particles. Herefore particle reaction experiments are performed to validate 
-theoretical models and extract physical quantities and information (based on 
-those models). To validate and extract information a comparison of the data from
-the experiment and the theoretical model is needed.
+particles. Herefore particle reaction experiments are performed to validate
+theoretical models and extract physical quantities and information (based on
+those models). To validate and extract information a comparison of the data
+from the experiment and the theoretical model is needed.
 
-The probablity amplitude :cite:`weinberg_1995,p.113`  of an initial state 
+The probablity amplitude :cite:`weinberg_1995`, p.113  of an initial state
 :math:`\Psi_i` going to a final state :math:`\Psi_f` is
 
 .. math::
@@ -27,7 +31,7 @@ many experimental measurements fall under these two categories:
 1. Single particles in the initial state (:math:`N_I=1`)
 
    This is a single particle decaying into the final state particles. Here the
-   decay rate :cite:`weinberg_1995,p.136` is 
+   decay rate :cite:`weinberg_1995`, p.136 is
 
    .. math::
 
@@ -39,7 +43,7 @@ many experimental measurements fall under these two categories:
 2. Two particles in the initial state (:math:`N_I=2`)
 
    The cross section of a two particle scattering/production process
-   :cite:`weinberg_1995,p.137` is
+   :cite:`weinberg_1995`, p.137 is
 
    .. math::
 
@@ -49,43 +53,43 @@ many experimental measurements fall under these two categories:
 
 Describing multi body problems (more than 2) is a difficult task, since the
 interaction of more than two particles is difficult to describe
-:cite:`weinberg_1995,ch.4`. 
+:cite:`weinberg_1995`, ch.4.
 
-One can resort to a simplification to treat a many body interaction by successive
-two body interactions. For N body particle decays (N > 2) this is known as the
-isobar model. Here a particle into N final state particles is modeled
-by a sequence of two particle decays. This is also also a assumption of the 
-helicity/canonical formalism.
+One can resort to a simplification to treat a many body interaction by
+successive two body interactions. For N body particle decays (N > 2) this is
+known as the isobar model. Here a particle into N final state particles is
+modeled by a sequence of two particle decays. This is also also a assumption of
+the helicity/canonical formalism.
 
- 
+
 Helicity Formalism
 ------------------
 
 
 Two particle states are the key element here. With these one can construct
-states of total Spin J and projection M. 
+states of total Spin J and projection M.
 
 The probablity amplitude of a state with spin J and projection M decaying into
-two particles 1 and 2 with helicities :math:`\lambda_i` and momentum 
-:math:`\vec{p}` in the cms frame is given by :cite:`chung2006spin,p.16` 
+two particles 1 and 2 with helicities :math:`\lambda_i` and momentum
+:math:`\vec{p}` in the cms frame is given by :cite:`chung2006spin`, p.16.
 
 .. math::
-   
+
    two body decay amplitude here
 
 In the helicity formalism sequential two body decays are easy to handle
 
 .. math::
-   
+
    seq two body decay amplitude here
 
 Then show explicity what ComPWA implements and which components correspond to
 what part in the equation. So we would refer in the doxygen docs to
 
-- the Wigner D functions 
+- the Wigner D functions
 - the Kinematics class
 - the IntensityBuilderXML with the two functions createSequentialAmplitudeFT
-createHelicityDecayFT
+  createHelicityDecayFT
 - the dynamical functions
 - the phase space element calculations?
 
@@ -116,16 +120,16 @@ measurements N
 cross section :math:`\sigma`
 
 .. math::
-  
+
    \frac{dN}{d\Phi_f} = L \cdot \frac{d\sigma}{d\Phi_f}
 
 Number of events in a infinitesimal phase space element :math:`\Phi_f` is
 proportional to the cross section of a initial state transitioning to the final
 state in the infinitesimal phase space element.
 
-This section should clear up the phase space element problem we are having.
-I'm not sure its just a plotting problem. Since there one makes the transition
-from unbinned to binned data...
+This section should clear up the phase space element problem we are having. I'm
+not sure its just a plotting problem. Since there one makes the transition from
+unbinned to binned data...
 
 Bibliography
 ------------
