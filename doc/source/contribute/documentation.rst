@@ -1,5 +1,5 @@
-Writing documentations
-======================
+Writing documentation
+=====================
 
 Sphinx
 ------

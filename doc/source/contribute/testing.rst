@@ -1,8 +1,3 @@
-.. |br| raw:: html
-
-  <br />
-
-
 Unit testing
 ------------
 
@@ -20,8 +15,10 @@ If you want to speed up the tests you can run ``pytest`` with the flag
 ``-m "not slow"``. Note, however, that in that case, the test coverage is not
 reliable.
 
+
 Continuous Integration (CI)
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The master branch is automatically build using TravisCI. Probably it is
 interesting to check out the `log file
 <https://travis-ci.com/ComPWA/pycompwa>`_ and the projects TravisCI
