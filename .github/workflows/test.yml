@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Test install dependencies
+        env:
+          ROOTBIN: v6.20.04.Linux-ubuntu18-x86_64-gcc7.5
         run: |
           sudo apt install libboost-all-dev
           wget https://root.cern.ch/download/root_${ROOTBIN}.tar.gz
