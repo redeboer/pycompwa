@@ -1,0 +1,28 @@
+name: CI test
+
+on:
+  push:
+    branches:
+      - master
+      - ci-github-workflow
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Test install dependencies
+        run: |
+          sudo apt install libboost-all-dev
+          wget https://root.cern.ch/download/root_${ROOTBIN}.tar.gz
+          tar xpvfz root_*.tar.gz > /dev/null 2>&1
+          source root/bin/thisroot.sh
+
+      - name: Test whether ROOT exists
+        run: |
+          echo "ROOTSYS: $ROOTSYS"
