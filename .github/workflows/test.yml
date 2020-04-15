@@ -28,3 +28,4 @@ jobs:
       - name: Test whether ROOT exists
         run: |
           echo "ROOTSYS: $ROOTSYS"
+          nproc
