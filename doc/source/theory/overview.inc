@@ -2,12 +2,12 @@ Overview
 --------
 
 In general one is interested in gaining knowledge about the interaction of
-particles. Herefore particle reaction experiments are performed to validate
+particles. Therefore, particle reaction experiments are performed to validate
 theoretical models and extract physical quantities and information (based on
 those models). To validate and extract information a comparison of the data
 from the experiment and the theoretical model is needed.
 
-The probablity amplitude :cite:`weinberg_1995`, p.113  of an initial state
+The probability amplitude :cite:`weinberg_1995`, p.113  of an initial state
 :math:`\Psi_i` going to a final state :math:`\Psi_f` is
 
 .. math::
@@ -18,8 +18,8 @@ This is a general formula, so the particle content of the initial and final
 state is arbitrary.
 
 Experimental physicists measure transition rates or cross sections instead of
-the transition probablity. There are two special cases of initial states, since
-many experimental measurements fall under these two categories:
+the transition probability. There are two special cases of initial states,
+since many experimental measurements fall under these two categories:
 
 1. Single particles in the initial state (:math:`N_I=1`)
 
@@ -51,5 +51,5 @@ interaction of more than two particles is difficult to describe
 One can resort to a simplification to treat a many body interaction by
 successive two body interactions. For N body particle decays (N > 2) this is
 known as the isobar model. Here a particle into N final state particles is
-modeled by a sequence of two particle decays. This is also also a assumption of
-the helicity/canonical formalism.
+modelled by a sequence of two particle decays. This is also also a assumption
+of the helicity/canonical formalism.
